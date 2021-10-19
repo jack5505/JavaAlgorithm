@@ -24,9 +24,17 @@ public class BruteForcesMask {
         for(int i = 0 ; i < n; i ++){
             a[i] = cin.nextInt();
         }
+        int ans = 0;
         for(int mask = 0 ; mask < (1 << n) ;mask ++){
-
+            long sum  = 0;
+            for(int i = 0 ;i  < n ;i ++){
+                if((mask & (1 << i)) != 0)
+                    sum += a[i];
+            }
+            if(sum == X)
+                ans ++;
         }
+        System.out.println(ans);
 
 
 
