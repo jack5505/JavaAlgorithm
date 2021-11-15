@@ -11,7 +11,7 @@ import java.util.Vector;
  *  @author Sabirov Jakhongir
  *
  */
-public class Graph {
+public class GraphDfsRecursion {
     // This example of dfs algorithm that implemented in java with recursion
     static LinkedList<Integer> adj[];
     static boolean used[] = new boolean[10001];
@@ -45,7 +45,5 @@ public class Graph {
         int v;
         v = cin.nextInt();
         dfs(v);
-
-
     }
 }
