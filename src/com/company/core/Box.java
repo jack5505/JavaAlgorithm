@@ -1,5 +1,8 @@
 package com.company.core;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  *
  *  @author Sabirov Jakhongir
@@ -20,9 +23,34 @@ public class Box<T> {
         System.out.println("U: " + u.getClass().getName());
     }
 
+    public static <T extends Comparable<T>> int  countGreater(T[] anArray, T element){
+        int count = 0;
+        for(T i : anArray){
+            if(i.compareTo(element) > 0){
+                count++;
+            }
+        }
+        return count;
+    }
+
+
+
     public static void main(String[] args) {
         Box<Integer> test = new Box<>();
         test.setT(5);
+
+        Integer a[] = new Integer[10];
+        for(int i = 0 ; i < 10; i++){
+            a[i] = i;
+        }
+        System.out.println(countGreater(a,3));
+        String tt[] = new String[10];
+        String temp = "";
+        for(int i = 0 ;i < 10 ;i ++){
+            tt[i] = temp;
+            temp += i + "";
+        }
+        System.out.println(countGreater(tt,"012"));
 
     }
     //Multiple Bounds
