@@ -23,9 +23,7 @@ public class Main {
                 ", name='" + name + '\'' +
                 '}';
         }
-    }
-
-    ;
+    };
 
     public static void main(String[] args) throws ParseException {
         List<Student> list = new ArrayList<>();

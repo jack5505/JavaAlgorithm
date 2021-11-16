@@ -1,5 +1,7 @@
 package com.company.core;
 
+import javax.swing.JButton;
+
 /*
  *
  *  @author Sabirov Jakhongir
@@ -25,7 +27,14 @@ public class JavaCore1 {
      */
     private static String test = "";
     public static void main(String[] args) {
+        Class<?> items[] = JButton.class.getClasses();
+        System.out.println(items.length);
+        showUP(items);
 
-
+    }
+    static void  showUP(Class ... items){
+        for (int i = 0; i < items.length; i++) {
+            System.out.println(items[i]);
+        }
     }
 }
