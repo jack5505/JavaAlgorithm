@@ -1,5 +1,6 @@
 package com.company.core;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,10 +33,25 @@ public class Box<T> {
         }
         return count;
     }
+    public static void calculate(Number number){
+
+    }
+
+    public static void test(List<? extends Number> shrt){
+
+    }
+
+    public static void add(List<? super Integer> list){
+
+    }
 
 
 
     public static void main(String[] args) {
+        List<Integer> show = new ArrayList<>();
+        List<Integer> show1 = new ArrayList<>();
+        add(show);
+        test(show);
         Box<Integer> test = new Box<>();
         test.setT(5);
 
@@ -51,6 +67,8 @@ public class Box<T> {
             temp += i + "";
         }
         System.out.println(countGreater(tt,"012"));
+        calculate(32);
+        calculate(BigDecimal.valueOf(32));
 
     }
     //Multiple Bounds
