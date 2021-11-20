@@ -17,7 +17,7 @@ public class Learn {
     // List<? extends Number> eto tolqo dlya chteniya bezopasno
 
     private static void printall(List<? extends Number> list) {
-        // list.add(15); wront dobavit tut u nas ne poluchetsya 
+        // list.add(15); wront dobavit tut u nas ne poluchetsya
         for(Number i : list){
             System.out.println(i);
         }
