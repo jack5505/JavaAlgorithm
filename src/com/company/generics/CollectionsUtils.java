@@ -12,6 +12,7 @@ public class CollectionsUtils {
     public static<E> E max(List<E> list, Comparator<E> comparator){
       E max = list.get(0);
       for(E e : list){
+          // yesli perviy parameter menshi chem vtoroy e togda vozvrashayetsa chislo menshi nulya 
           if(comparator.compare(max,e) < 0){
               max = e;
           }
