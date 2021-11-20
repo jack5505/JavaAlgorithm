@@ -54,4 +54,14 @@ public class CollectionsUtils {
         });
         System.out.println(m);
     }
+
+    public void run(){
+        // tuda mojno dobavit shto ugodno qotori nasledovana ot qlassa Number
+        List<? super Number> list = new ArrayList<>();
+        list.add(15L);
+        list.add(15);
+        list.add(15D);
+
+
+    }
 }
