@@ -21,8 +21,8 @@ public class CollectionsUtils {
       return max;
     }
 
-    // need to do extedn from Comparable and need to show up it is element in Comparable Interface 
-    public static<E extends Comparable<E>> E maxN(List<E> list){
+    // need to do extedn from Comparable and need to show up it is element in Comparable Interface
+    public static<E extends Comparable<? super E>> E maxN(List<E> list){
         E max = list.get(0);
         for(E e : list){
             // yesli perviy parameter menshi chem vtoroy e togda vozvrashayetsa chislo menshi nulya
