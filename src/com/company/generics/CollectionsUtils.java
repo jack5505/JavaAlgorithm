@@ -9,6 +9,9 @@ import java.util.List;
  * @author Sabirov Jakhongir
  */
 public class CollectionsUtils {
+    //Effective java
+    // PE CS Produces extend , consumer  super
+    // produces all should be ? extedns E  : ? super E
 
     public static<E> E max(List<E> list, Comparator<E> comparator){
       E max = list.get(0);
