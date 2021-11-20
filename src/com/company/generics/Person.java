@@ -3,7 +3,7 @@ package com.company.generics;
 /**
  * @author Sabirov Jakhongir
  */
-public class Person {
+public class Person implements Comparable<Person> {
     private String name;
     private Integer age;
 
@@ -34,5 +34,10 @@ public class Person {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return name.compareTo(o.getName());
     }
 }

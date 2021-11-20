@@ -21,6 +21,17 @@ public class CollectionsUtils {
       return max;
     }
 
+    public static<E extends Comparable> E maxN(List<E> list){
+        E max = list.get(0);
+        for(E e : list){
+            // yesli perviy parameter menshi chem vtoroy e togda vozvrashayetsa chislo menshi nulya
+            if(max.compareTo(e) < 0){
+                max = e;
+            }
+        }
+        return max;
+    }
+
     public static void main(String[] args) {
         List<Person> list1 = Arrays.asList(
                 new Person("Aaa",1),
@@ -43,6 +54,8 @@ public class CollectionsUtils {
                 .thenComparing(Person::getAge));
 
 
+        Person maxnew = maxN(list1);
+        System.out.println(maxnew.toString());
         System.out.println(mx8.toString());
 
          List<Integer> list = Arrays.asList(15,25,789798);
