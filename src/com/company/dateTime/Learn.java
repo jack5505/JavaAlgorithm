@@ -4,10 +4,13 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
+import java.time.Year;
+import java.time.ZoneId;
 import java.time.format.TextStyle;
 import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Locale;
+import java.util.Set;
 
 /*
  *
@@ -43,6 +46,16 @@ public class Learn {
         // how to find what kind of day of month  you were born ))
         DayOfWeek dayOfWeek = LocalDate.of(1961,Month.JANUARY,28).getDayOfWeek();
         System.out.println(dayOfWeek.getDisplayName(TextStyle.FULL,Locale.getDefault()));
+
+        // The Year class represents a year. The following example uses the Year.isLeap method to determine if the given year is a leap year. The call returns true, confirming that 2012 is a leap year.
+
+        boolean validLeapYear = Year.of(2012).isLeap();
+
+        System.out.println(validLeapYear);
+
+        Set<String> allZones = ZoneId.getAvailableZoneIds();
+
+        allZones.forEach(System.out::println);
 
     }
 }
