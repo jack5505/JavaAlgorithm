@@ -40,5 +40,9 @@ public class Learn {
         System.out.println(month.getDisplayName(TextStyle.FULL, Locale.getDefault()));
         System.out.println(DayOfWeek.MONDAY.getDisplayName(TextStyle.FULL,Locale.getDefault()));
 
+        // how to find what kind of day of month  you were born ))
+        DayOfWeek dayOfWeek = LocalDate.of(1961,Month.JANUARY,28).getDayOfWeek();
+        System.out.println(dayOfWeek.getDisplayName(TextStyle.FULL,Locale.getDefault()));
+
     }
 }
