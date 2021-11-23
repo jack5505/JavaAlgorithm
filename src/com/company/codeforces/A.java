@@ -21,7 +21,7 @@ public class A {
         while (start < n && start != m){
             start = start + a[start];
         }
-        System.out.println(start == m ? "YES" : "NO");
+
 
 
     }
