@@ -1,10 +1,13 @@
 package com.company.dateTime;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
+import java.time.format.TextStyle;
 import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
+import java.util.Locale;
 
 /*
  *
@@ -32,6 +35,10 @@ public class Learn {
         LocalDate dateOfBirth = LocalDate.of(2012, Month.MAY, 14);
         LocalDate firstBirthday = dateOfBirth.plusYears(1);
         System.out.println(dateOfBirth +" " + firstBirthday);
+
+        Month month = Month.SEPTEMBER;
+        System.out.println(month.getDisplayName(TextStyle.FULL, Locale.getDefault()));
+        System.out.println(DayOfWeek.MONDAY.getDisplayName(TextStyle.FULL,Locale.getDefault()));
 
     }
 }
