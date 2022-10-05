@@ -16,7 +16,10 @@ public class BruteForcesMask {
      * Har bir kombinatsiyada sonning ikkilik kodidagi mos belgisi 1 ga teng bo’lsa uni tegishli, 0 ga teng bo’lsa tegishli emas deb olamiz.
      * @param args
      */
+
     public static void main(String[] args) {
+
+
         Scanner cin = new Scanner(System.in);
         int n = cin.nextInt();
         int X = cin.nextInt();

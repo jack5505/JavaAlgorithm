@@ -8,7 +8,7 @@ package com.company.thread;
 public class Test {
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName());
-        // in this example you can see that main thread of this won't work order by as it was executed one 
+        // in this example you can see that main thread of this won't work order by as it was executed one
         for(int i = 1 ; i <= 10 ;i ++){
             new Thread(i + ""){
                 @Override public void run() {

@@ -7,6 +7,9 @@ package com.company.thread;
  */
 public class MyRunnable implements java.lang.Runnable {
     private boolean doStop = false;
+
+
+
     public synchronized void doStop(){
         this.doStop = true;
     }
