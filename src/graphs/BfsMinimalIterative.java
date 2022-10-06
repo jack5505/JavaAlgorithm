@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class BfsMinimalIterative {
     // bu misolda 1 vershinadan boshlab qolgan hamma vershinaga o`tish bo`yicha qancha uchga kirib o`tishlari bor
-    // bu iterative yo`li orqali ishlagana 
+    // bu iterative yo`li orqali ishlagana
     static boolean  used[] = new boolean[10001];
     static int d[] = new int[10001];
     public static void main(String[] args) {
@@ -35,7 +35,8 @@ public class BfsMinimalIterative {
         queue.add(1);
         used[1] = true;
         d[1] = 0;
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty())
+        {
             int v = queue.poll();
             for(int i = 0 ; i < lists.get(v).size() ;i ++){
                 int to = lists.get(v).get(i);
