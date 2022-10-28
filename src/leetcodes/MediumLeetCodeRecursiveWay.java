@@ -28,10 +28,9 @@ public class MediumLeetCodeRecursiveWay {
 
     }
     public static void main(String[] args) {
-        Scanner cin = new Scanner(System.in);
-        n = cin.nextInt();
-        k = cin.nextInt();
-        go(new ArrayList<>(),1);
+        System.out.println(2&2);
+        int b = 2 & 2;
+        System.out.println(0 << 1);
 
 
 
