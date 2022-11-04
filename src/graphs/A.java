@@ -26,17 +26,9 @@ public class A {
     }
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
-        int a = cin.nextInt();
-        int b = cin.nextInt();
-        list = new ArrayList<>();
-        dfs(a,b);
-        if(found){
-            System.out.println("YES\n" + list.size());
-            for (int i = list.size() - 1; i >= 0; i --) {
-                System.out.print(list.get(i) + " ");
-            }
-            return;
-        }
-        System.out.println("NO");
+        int n = cin.nextInt();
+        System.out.println(n +" " + Integer.toBinaryString(n));
+        n = (n ^ (1 << 2));
+        System.out.println(n + " " + Integer.toBinaryString(n));
     }
 }

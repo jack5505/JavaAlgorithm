@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  *
  *  @author Sabirov Jakhongir
- *  MSU ALGORITHM DP 
+ *  MSU ALGORITHM DP
  */
 public class Solution4 {
     public static void main(String[] args) {
