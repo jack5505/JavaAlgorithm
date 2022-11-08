@@ -3,7 +3,7 @@ import java.util.Scanner;
 /*
  *
  *  @author Sabirov Jakhongir
- * MSU 
+ * MSU
  */
 public class LearnDp {
     public static void main(String[] args) {

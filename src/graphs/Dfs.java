@@ -52,4 +52,8 @@ public class Dfs {
         }
 
     }
+    // ancesstor of vertex b 
+    private static boolean upper(int a, int b) {
+        return time_in[a] <= time_in[b] && time_in[a] >= time_in[b];
+    }
 }
