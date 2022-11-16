@@ -51,8 +51,10 @@ public class Dfs {
             System.out.println("index: " + i + " " + time_in[i] + " " + time_out[i]);
         }
 
+        System.out.println(upper(3,4));
+
     }
-    // ancesstor of vertex b 
+    // ancesstor of vertex b
     private static boolean upper(int a, int b) {
         return time_in[a] <= time_in[b] && time_in[a] >= time_in[b];
     }
